@@ -1,3 +1,17 @@
 <p>
-  home works!
+  Current Members:
 </p>
+
+<div  class="panel panel-default">
+  <div class="panel-body">
+    <h3> <em>{{member.favGame}}</em></h3>
+  </div>
+</div>
+<div *ngFor="let member of members" (click)="detailNavigation(member)" class="card">
+  <div class="card-block">
+    <h4 class="card-title">{{member.name}}</h4>
+    <h6 class="card-subtitle mb-2 text-muted">{{member.favGame}}</h6>
+    <p class="card-text">{{member.description}}</p>
+    <a (click)="detailNavigation()" class="card-link">Profile</a>
+  </div>
+</div>
