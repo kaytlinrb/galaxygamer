@@ -1,5 +1,5 @@
 import { TestBed, inject } from '@angular/core/testing';
-
+import { Member } from './member.model';
 import { MemberService } from './member.service';
 
 describe('MemberService', () => {

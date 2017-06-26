@@ -1,0 +1,19 @@
+<h4>Edit Member</h4>
+
+<label>New Name:</label>
+<input [(ngModel)]="selectedMember.name">
+<br>
+
+<label>New Image URL:</label>
+<input [(ngModel)]="selectedMember.img">
+<br>
+
+<label>New Description:</label>
+<input [(ngModel)]="selectedMember.description">
+
+
+<label>New Favorite Game:</label>
+<input [(ngModel)]="selectedMember.favGame">
+
+<button (click)="beginUpdatingMember(selectedMember)">Update</button>
+<button (click)="beginDeletingMember(selectedMember)">Delete</button>

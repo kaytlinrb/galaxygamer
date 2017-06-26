@@ -1,8 +1,26 @@
-# GalaxyGamer
+# Galaxy Gamer
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+## Description
+
+Sci-fi gaming club with administrator privileges to add, edit and delete members.
+
 ## Development server
+
+Clone the repository and open the project in a text editor. Create a file in the app folder called 'api-keys.ts'. Add this content to the file :
+export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+
+Go to [Firebase](https://firebase.google.com/) and log in or create an account.
+Make a new firebase project. Click on the item that says "Add Firebase to Your WebApp". Replace the 'xxxx' above with the relevant Firebase credentials.
+
+Navigate to Database > Rules and change the "read" and "write" rules to true (do not use quotes).
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 

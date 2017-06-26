@@ -1,0 +1,34 @@
+Admin- Add New Member
+
+
+
+<h3>New Member</h3>
+  <div>
+    <label>Name:</label>
+    <br>
+    <input #newName class="form-control">
+  </div>
+
+  <div>
+    <label>Image URL:</label>
+    <br>
+    <input #newImg class="form-control">
+  </div>
+
+  <div>
+    <label>Description:</label>
+    <br>
+    <input #newDescription class="form-control">
+  </div>
+
+  <div>
+    <label>Favorite Game:</label>
+    <input #newGame class="form-control">
+  </div>
+
+  <br>
+
+  <button class="btn" (click)="submitForm(newName.value, newImg.value, newDescription.value, newGame.value); newName.value=''; newImg.value=''; newDescription.value=''; newGame.value=''">Add</button>
+
+
+  <app-home></app-home>

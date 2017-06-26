@@ -11,6 +11,9 @@ import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AdminComponent } from './admin/admin.component';
+import { EditMemberComponent } from './edit-member/edit-member.component';
+import { GamePipe } from './game.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +28,10 @@ export const firebaseConfig = {
     AppComponent,
     HomeComponent,
     AboutComponent,
-    MemberDetailComponent
+    MemberDetailComponent,
+    AdminComponent,
+    EditMemberComponent,
+    GamePipe
   ],
   imports: [
     BrowserModule,
