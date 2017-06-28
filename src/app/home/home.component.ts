@@ -23,9 +23,9 @@ export class HomeComponent implements OnInit {
     this.members = this.memberService.getMember();
   }
 
-    detailNavigation(clicked: Member) {
+    detailNavigation(clicked) {
       console.log(clicked);
-      // this.router.navigate(['members', clicked.$key]);
+      this.router.navigate(['members', clicked.$key]);
     }
 
   onChange(optionFromMenu) {

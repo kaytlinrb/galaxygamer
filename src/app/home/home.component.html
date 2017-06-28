@@ -1,19 +1,17 @@
 <p>
   Current Members:
 </p>
+<hr>
 <p>Filter By Favorite Game:</p>
 <select (change)="onChange($event.target.value)">
   <option value="allMembers" selected="selected">All Gamers</option>
-  <option value="startrek">Star Trek Online</option>
+  <option value="Star Trek Online">Star Trek Online</option>
   <option value="Nickelback">Nickelback</option>
   <option value="Dead Space">Dead Space</option>
 </select>
-
-<div  class="panel panel-default">
-  <div class="panel-body">
-  </div>
-</div>
-<div *ngFor="let member of members | async | game:filterByGame" (click)="detailNavigation(member)" class="card">
+<hr>
+<div class="cardDisplay">
+<div *ngFor="let member of members | async | game:filterByGame" (click)="detailNavigation(member)" class="card" >
   <div class="card-block">
     <h4 class="card-title">{{member.name}}</h4>
     <h6 class="card-subtitle mb-2 text-muted">{{member.favGame}}</h6>
@@ -24,4 +22,5 @@
     {{member.name}}
     <app-edit-member [selectedMember]="member"></app-edit-member>
   </div>
+</div>
 </div>

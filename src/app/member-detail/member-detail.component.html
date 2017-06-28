@@ -1,6 +1,17 @@
 <div>
-  <h3>{{memberDisplay.name}}</h3>
-  <img src={{memberDisplay.img}} alt="profile pic">
-  <h5>{{memberDisplay.favGame}}</h5>
-  <p>{{memberDisplay.description}}</p>
+  <h3></h3>
+
+  <h5></h5>
+  <p></p>
+</div>
+
+<div class="card card-outline-primary mb-3 text-center">
+  <div class="card-block">
+    <blockquote class="card-blockquote">
+      <h3>{{(memberToDisplay | async)?.name}}</h3>
+      <img src="{{(memberToDisplay | async)?.img}}" alt="">
+      <footer>{{(memberToDisplay | async)?.description}} <br>
+        <cite title="Source Title">Favorite Game: {{(memberToDisplay | async)?.favGame}}</cite></footer>
+    </blockquote>
+  </div>
 </div>

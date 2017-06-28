@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+.container{
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/c9/e4/0e/c9e40e5e617c33d13459adf269e2d036.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 6px purple groove;
+  padding: 80px;
+  margin: 20px;
+
+}
+.bg{
+  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/J9H9WF0/galaxy-animation-with-shining-light-particle-stars-on-colorful-pink-orange-blue-gradient-background_bzum5wzge_thumbnail-medium01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
