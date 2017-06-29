@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-Sci-fi gaming club with administrator privileges to add, edit and delete members.
+Sci-fi gaming club displays club members with accessable profile pages website with administrator page to add, edit and delete members using the Angular Javascript framework and typescript.
 
 ## Development server
 
